@@ -13,5 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap
+//= require bind-polyfill
+//= require smooth-scroll
 //= require turbolinks
 //= require_tree .

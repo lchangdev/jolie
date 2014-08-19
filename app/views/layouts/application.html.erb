@@ -1,14 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
   <title>Jolie</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <div id="wrapper" class="toggled">
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper">
+      <ul class="sidebar-nav">
+        <li class="sidebar-brand"><a data-scroll href="#home" class="navbar-link">JOLIE</a></li>
+        <li><a data-scroll href="#wholesale" class="navbar-link">WHOLESALE</a></li>
+        <li><a data-scroll href="#about" class="navbar-link">ABOUT</a></li>
+        <li><a data-scroll href="#contact" class="navbar-link">CONTACT</a></li>
+      </ul>
+    </div> <!-- /#sidebar-wrapper -->
 
-<%= yield %>
-
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+      <div class="container-fluid">
+        <div class="col-xs-12 toggle-container">
+          <button type="button" class="btn btn-default" id="menu-toggle" data-target="#menu-toggle">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <%= yield %>
+      </div>
+    </div>
+      <!-- /#page-content-wrapper -->
+  </div>
+  <!-- /#wrapper -->
+<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 </body>
 </html>
+
