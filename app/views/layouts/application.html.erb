@@ -25,14 +25,12 @@
     <!-- Page Content -->
     <div id="page-content-wrapper">
       <div class="container-fluid">
-        <div class="col-xs-12 toggle-container">
-          <button type="button" class="btn btn-default" id="menu-toggle" data-target="#menu-toggle">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        </div>
+        <button type="button" id="menu-toggle" data-target="#menu-toggle">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
         <%= yield %>
       </div>
     </div>

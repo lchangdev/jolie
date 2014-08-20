@@ -2,35 +2,9 @@
 
 html,
 body {
-  font-family: 'Roboto';
+  font-family: 'Poiret One';
+  font-weight: 400;
   height: 100%;
-}
-
-#wrapper,
-#page-content-wrapper,
-.container-fluid {
-  height: 100%;
-}
-
-.container-fluid {
-  padding: 0px;
-}
-
-.toggle-container {
-  padding-left: 20px;
-  padding-top: 20px;
-}
-
-#menu-toggle {
-  position: fixed;
-}
-
-.icon-bar {
-  display: block;
-  width: 22px;
-  height: 2px;
-  background-color: #cccccc;
-  border-radius: 1px;
 }
 
 /* ---------- sidebar ---------- */
@@ -45,16 +19,93 @@ body {
 
 /* ---------- homepage ---------- */
 
+#wrapper,
+#page-content-wrapper,
+.container-fluid {
+  height: 100%;
+}
+
+.container-fluid {
+  padding: 0px;
+}
+
+#menu-toggle {
+  position: fixed;
+  background-color: transparent;
+  border-radius: 0px;
+  margin-top: 30px;
+  margin-left: 30px;
+  z-index: 1;
+  border: 1px solid black;
+  padding: 5px 5px 5px 5px;
+}
+
+#menu-toggle:focus, #menu-toggle:active:focus, #menu-toggle.active:focus {
+  outline: none;
+}
+
+#menu-toggle span:nth-child(n+3) {
+  margin-top: 5px;
+}
+
+.icon-bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: black;
+}
+
+#down-link {
+  font-size: 2em;
+  color: tomato;
+  border: 1px solid tomato;
+}
+
 .homepage-container {
-  background: url('<%= asset_path("test.jpg") %>') no-repeat center;
+  margin-left: 0px;
+  margin-right: 0px;
+  height: 100%;
+}
+/* ---------- home ---------- */
+
+.home-container {
+  background: url('<%= asset_path("test11.jpg") %>') no-repeat center;
   background-size: cover;
   height: 100%;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.jumbotron {
+  background-color: rgba(0,0,0, 0.5);
+  opacity: 0.8;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  padding-top: 300px;
+}
+
+.jumbotron .container {
+  width: 100%;
+}
+
+#homepage-header {
+  font-size: 10em;
+  color: #5C97BF;
+  font-weight: 800;
+  letter-spacing: 50px;
+}
+
+#city {
+  color: tomato;
+  letter-spacing: 20px;
+  font-weight: bold;
 }
 
 /* ---------- wholesale ---------- */
 
 .wholesale-container {
-  background: url('<%= asset_path("test2.jpg") %>') no-repeat center;
+  background: url('<%= asset_path("test8.jpg") %>') no-repeat center;
   background-size: cover;
   height: 100%;
 }
@@ -62,18 +113,59 @@ body {
 /* ---------- about ---------- */
 
 .about-container {
-  background: url('<%= asset_path("test3.jpg") %>') no-repeat center;
+  background: url('<%= asset_path("test9.jpg") %>') no-repeat center;
   background-size: cover;
   height: 100%;
   background-attachment: fixed;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.about-summary-container {
+  background-color: rgba(0,0,0, 0.7);
+  opacity: 0.8;
+  height: 350px;
+  margin-top: 200px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.about-summary-container h1 {
+  color: white;
 }
 
 /* ---------- contact ---------- */
 
 .contact-container {
-  background: url('<%= asset_path("test4.jpg") %>') no-repeat center;
-  background-size: cover;
   height: 100%;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.contact-info-container {
+  height: 100%;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.contact-row {
+  border-bottom: 1px solid black;
+  height: 225px;
+}
+
+.contact-info-summary {
+  height: 225px;
+  padding-top: 100px;
+  text-align: center;
+}
+
+#line-through-text {
+  text-decoration: line-through;
+}
+
+.map-container {
+  height: 100%;
+  background-color: tomato;
 }
 
 
