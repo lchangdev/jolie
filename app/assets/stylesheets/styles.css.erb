@@ -25,6 +25,12 @@ body {
   height: 100%;
 }
 
+.homepage-container {
+  margin-left: 0px;
+  margin-right: 0px;
+  height: 100%;
+}
+
 .container-fluid {
   padding: 0px;
 }
@@ -36,7 +42,7 @@ body {
   margin-top: 30px;
   margin-left: 30px;
   z-index: 1;
-  border: 1px solid black;
+  border: 1px solid tomato;
   padding: 5px 5px 5px 5px;
 }
 
@@ -52,20 +58,31 @@ body {
   display: block;
   width: 25px;
   height: 3px;
-  background-color: black;
+  background-color: tomato;
+}
+
+#down-text {
+  -ms-transform: rotate(90deg); /* IE 9 */
+  -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+  transform: rotate(90deg);
+  color: #5C97BF;
 }
 
 #down-link {
-  font-size: 2em;
-  color: tomato;
-  border: 1px solid tomato;
+  font-size: 3em;
+  padding: 0px;
+  font-weight: 100;
+  font-family: 'Advent Pro';
+  border-radius: 100%;
+  height: 100px;
+  width: 100px;
+  border: 2px solid #5C97BF;
 }
 
-.homepage-container {
-  margin-left: 0px;
-  margin-right: 0px;
-  height: 100%;
+#down-link:hover {
+  text-decoration: none;
 }
+
 /* ---------- home ---------- */
 
 .home-container {
@@ -74,14 +91,13 @@ body {
   height: 100%;
   padding-left: 0px;
   padding-right: 0px;
+  overflow: auto;
 }
 
 .jumbotron {
-  background-color: rgba(0,0,0, 0.5);
-  opacity: 0.8;
+  background: transparent;
   text-align: center;
   width: 100%;
-  height: 100%;
   padding-top: 300px;
 }
 
@@ -105,11 +121,35 @@ body {
 /* ---------- wholesale ---------- */
 
 .wholesale-container {
-  background: url('<%= asset_path("test8.jpg") %>') no-repeat center;
-  background-size: cover;
   height: 100%;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
+.wholesale-header-container {
+  padding-top: 20px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+}
+
+.wholesale-header-container h1 {
+  color: #5C97BF;
+  letter-spacing: 20px;
+  text-align: center;
+  background-color: lightblue;
+  margin-bottom: 0px;
+}
+
+.wholesale-company1-container {
+  height: 100%;
+  background-color: grey;
+}
+
+.wholesale-company2-container {
+  height: 100%;
+  background-color: yellow;
+}
 /* ---------- about ---------- */
 
 .about-container {
@@ -130,10 +170,24 @@ body {
   padding-right: 0px;
 }
 
-.about-summary-container h1 {
-  color: white;
+.about-header-container {
+  height: 350px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 140px;
+  text-align: center;
 }
 
+.about-header-container h1 {
+  color: #5C97BF;
+  letter-spacing: 20px;
+}
+
+.about-content-container {
+  height: 350px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
 /* ---------- contact ---------- */
 
 .contact-container {
@@ -149,23 +203,42 @@ body {
 }
 
 .contact-row {
-  border-bottom: 1px solid black;
   height: 225px;
 }
 
 .contact-info-summary {
-  height: 225px;
-  padding-top: 100px;
+  height: 100px;
+  padding-top: 30px;
   text-align: center;
 }
 
-#line-through-text {
-  text-decoration: line-through;
+.contact-info-summary h1 {
+  letter-spacing: 15px;
+}
+
+#email-container {
+  padding-bottom: 20px;
+}
+
+.email-submit-btn {
+  width: 100%;
+}
+
+.form-horizontal {
+  padding-top: 30px;
+}
+
+.form-control {
+  border-color: black;
+}
+
+table td {
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 2px;
 }
 
 .map-container {
   height: 100%;
   background-color: tomato;
 }
-
-
