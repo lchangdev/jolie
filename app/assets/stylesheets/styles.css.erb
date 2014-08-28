@@ -7,6 +7,13 @@ body {
   height: 100%;
 }
 
+/* ---------- links ---------- */
+
+.wholesale-link {
+  text-decoration: underline;
+  color: tomato;
+}
+
 /* ---------- sidebar ---------- */
 
 #sidebar-wrapper {
@@ -18,10 +25,6 @@ body {
 }
 
 /* ---------- homepage ---------- */
-
-.player {
-
-}
 
 #wrapper,
 #page-content-wrapper,
@@ -90,8 +93,6 @@ body {
 /* ---------- home ---------- */
 
 .home-container {
-/*  background: url('<%= asset_path("test8.jpg") %>') no-repeat center;
-  background-size: cover;*/
   height: 100%;
   padding-left: 0px;
   padding-right: 0px;
@@ -133,16 +134,14 @@ body {
 }
 
 .wholesale-summary-container {
-  background-color: rgba(0,0,0, 0.7);
+  background-color: rgba(0,0,0, 0.95);
   opacity: 0.8;
-  height: 350px;
-  margin-top: 200px;
+  height: 50%;
   padding-left: 0px;
   padding-right: 0px;
 }
 
 .wholesale-header-container {
-  height: 350px;
   padding-left: 0px;
   padding-right: 0px;
   padding-top: 140px;
@@ -154,9 +153,37 @@ body {
   letter-spacing: 20px;
 }
 
+.wholesale-header-container h4 {
+  color: #5C97BF;
+}
+
+.wholesale-header-container,
 .wholesale-company1-container,
 .wholesale-company2-container {
   height: 100%;
+}
+
+.wholesale-company1-container,
+.wholesale-company2-container {
+  text-align: center;
+  padding-top: 100px;
+}
+
+.wholesale-btn {
+  border-radius: 100%;
+  height: 200px;
+  width: 200px;
+  padding-top: 85px;
+  border: 1px solid tomato;
+  background-color: transparent;
+  color: tomato;
+  font-size: 25px;
+  letter-spacing: 2px;
+  opacity: 0.5;
+}
+
+.wholesale-btn:hover {
+  color: tomato;
 }
 
 /* ---------- about ---------- */
@@ -171,15 +198,15 @@ body {
 }
 
 .about-summary-container {
-  background-color: rgba(0,0,0, 0.7);
+  height: 50%;
+  background-color: rgba(0,0,0, 0.95);
   opacity: 0.8;
-  margin-top: 200px;
+  overflow: auto;
 }
 
-.about-summary-container
 .about-header-container,
 .about-content-container {
-  height: 350px;
+  height: 50%;
   padding-left: 0px;
   padding-right: 0px;
 }
@@ -194,8 +221,11 @@ body {
   letter-spacing: 20px;
 }
 
-.about-content-container h2 {
-  color: tomato;
+.about-content-container h3 {
+  color: #5C97BF;
+  line-height: 40px;
+  padding-top: 85px;
+
 }
 /* ---------- contact ---------- */
 

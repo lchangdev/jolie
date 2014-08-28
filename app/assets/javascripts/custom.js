@@ -8,6 +8,15 @@ $(document).ready(function(){
     e.preventDefault();
   });
 
+  // buttons'
+  $('.wholesale-btn').mouseenter(function(){
+    $(this).fadeTo('slow', 1);
+  });
+
+  $('.wholesale-btn').mouseleave(function(){
+    $(this).fadeTo('slow', 0.5);
+  });
+
   smoothScroll.init({
       speed: 500, // Integer. How fast to complete the scroll in milliseconds
       easing: 'Linear', // Easing pattern to use
