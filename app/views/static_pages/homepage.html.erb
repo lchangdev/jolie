@@ -1,8 +1,7 @@
 <div class="row" id="homepage-container">
 
-  <div class="home-container col-sm-12" id="home-container">
-    <a id="bgndVideo" class="player" data-property="{videoURL:'http://youtu.be/BsekcY04xvQ',containment:'#home-container',autoPlay:true, loop: true, mute:true, startAt: 18, stopAt: 31, opacity:1, ratio: '4/3', showControls: false}"></a>
-    <a id="home"> </a>
+  <div class="home-container col-md-12" id="home-container">
+    <a id="bgndVideo" class="player" data-property="{videoURL:'http://youtu.be/BsekcY04xvQ',containment:'#home-container', autoPlay:true, loop: true, mute:true, startAt: 18, stopAt: 31, opacity:1, ratio: '4/3', showControls: false}"></a>
     <div class="jumbotron">
       <div class="container">
         <h1 id="homepage-header">JOLIE</h1>
@@ -11,33 +10,29 @@
     </div>
   </div>
 
-  <div class="col-sm-12" id="wholesale-container">
+  <div class="col-md-12" id="wholesale-container">
     <a id="wholesale"> </a>
-    <div class="col-sm-12" id="wholesale-summary-container">
-      <div class="col-sm-4" id="wholesale-header-container">
+    <div class="col-md-12" id="wholesale-summary-container">
+      <div class="col-md-4" id="wholesale-header-container">
         <h1>Wholesale</h1>
+        <h4>Shop for our clothes at FashionGo and LAShowroom.</h4>
       </div>
-      <div class="col-sm-8">
-        <div class="col-md-12">
-          <h1>Shop for our clothes at</h1>
-        </div>
-        <div class="col-sm-6" id="wholesale-company1-container">
-          <a href="http://www.fashiongo.net/jolie" target="_blank" class="btn wholesale-btn">FashionGo</a>
-        </div>
-        <div class="col-sm-6" id="wholesale-company2-container">
-          <a href="http://www.lashowroom.com/jolie" target="_blank" class="btn wholesale-btn">LAShowroom</a>
-        </div>
+      <div class="col-md-4" id="wholesale-company1-container">
+        <a href="http://www.fashiongo.net/jolie" target="_blank" class="btn wholesale-btn">FashionGo</a>
+      </div>
+      <div class="col-md-4" id="wholesale-company2-container">
+        <a href="http://www.lashowroom.com/jolie" target="_blank" class="btn wholesale-btn">LAShowroom</a>
       </div>
     </div>
   </div>
 
-  <div class="col-sm-12" id="about-container">
+  <div class="col-md-12" id="about-container">
     <a id="about"> </a>
-    <div class="col-sm-12" id="about-summary-container">
-      <div class="col-sm-3" id="about-header-container">
+    <div class="col-md-12" id="about-summary-container">
+      <div class="col-md-3" id="about-header-container">
           <h1>About</h1>
       </div>
-      <div class="col-sm-9" id="about-content-container">
+      <div class="col-md-9" id="about-content-container">
         <h3>
           Since 2003, Jolie Clothing has always been about understated style with attention to detail and fabrication.  We aim to create pieces that make women feel effortless and chic but still put together.  All our manufacturing is done domestically which gives us the advantage of a quick turnaround and quality control. Look for Jolie at your favorite retailers.
         </h3>
@@ -45,7 +40,7 @@
     </div>
   </div>
 
-  <div class="col-sm-12" id="contact-container">
+  <div class="col-md-12" id="contact-container">
     <a id="contact"> </a>
     <div class="col-sm-6" id="contact-info-container">
       <div class="row contact-row">
@@ -56,32 +51,32 @@
         <div class="col-sm-12" id="email-container">
           <%= form_for (@contact_request), url: create_path, html: { class: "form-horizontal" } do |f| %>
             <div class="form-group">
-              <%= f.label :name, class: "col-md-3 control-label" %>
-              <div class="col-md-7">
+              <%= f.label :name, class: "col-sm-3 control-label" %>
+              <div class="col-sm-7">
                 <%= f.text_field :name, required: true, class: "form-control" %>
               </div>
             </div>
             <br>
             <div class="form-group">
-              <%= f.label :email, class: "col-md-3 control-label" %>
-              <div class="col-md-7">
+              <%= f.label :email, class: "col-sm-3 control-label" %>
+              <div class="col-sm-7">
                 <%= f.text_field :email, required: true, class: "form-control" %>
               </div>
             </div>
             <br>
             <div class="form-group">
-              <%= f.label :message, class: "col-md-3 control-label header green" %>
-              <div class="col-md-7">
+              <%= f.label :message, class: "col-sm-3 control-label header green" %>
+              <div class="col-sm-7">
                 <%= f.text_area :message, class: "form-control", rows: "6" %>
               </div>
             </div>
             <br>
-            <div class="col-md-2 col-md-offset-5">
+            <div class="col-sm-2 col-sm-offset-5">
               <%= f.submit 'send', class: 'btn btn-default email-submit-btn' %>
             </div>
           <% end %>
         </div>
-        <div class="col-md-12">
+        <div class="col-sm-12">
           <table class="table">
             <% if flash.any? %>
               <tr>
@@ -102,7 +97,7 @@
         </div>
       </div>
     </div>
-    <div id="map" class="col-sm-6 dark">
+    <div id="map" class="col-md-6 dark">
     </div>
   </div>
 </div>
