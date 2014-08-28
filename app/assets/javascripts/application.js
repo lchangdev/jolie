@@ -16,5 +16,5 @@
 //= require bind-polyfill
 //= require smooth-scroll
 //= require jquery.mb.YTPlayer
-//= require turbolinks
+//= require mapbox.js
 //= require_tree .
