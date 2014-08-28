@@ -5,12 +5,13 @@ feature "user receives confirmation after sending contact request", %Q{
   I want to be emailed a receipt after sending a contact request
   So that I know that the email went through successfully.
 } do
+
   scenario 'user fills out contact form' do
     #clear out mail deliveries
     ActionMailer::Base.deliveries = []
 
     prev_count = ContactRequest.count
-    visit '/'
+    visit root_path
     fill_in 'Name', with: 'John Smith'
     fill_in 'Email', with: 'user@example.com'
     fill_in 'Message', with: 'test message'
