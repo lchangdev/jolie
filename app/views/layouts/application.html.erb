@@ -12,7 +12,6 @@
 </head>
 <body>
   <div id="wrapper" class="toggled">
-    <!-- Sidebar -->
     <div id="sidebar-wrapper">
       <ul class="sidebar-nav">
         <li class="sidebar-brand"><a data-scroll href="#home" class="navbar-link">JOLIE</a></li>
@@ -20,9 +19,8 @@
         <li><a data-scroll href="#about" class="navbar-link">About</a></li>
         <li><a data-scroll href="#contact" class="navbar-link">Contact</a></li>
       </ul>
-    </div> <!-- /#sidebar-wrapper -->
+    </div>
 
-    <!-- Page Content -->
     <div id="page-content-wrapper">
       <div class="container-fluid">
         <button type="button" id="menu-toggle" data-target="#menu-toggle">
@@ -34,9 +32,8 @@
         <%= yield %>
       </div>
     </div>
-      <!-- /#page-content-wrapper -->
   </div>
-  <!-- /#wrapper -->
+
 <%= javascript_include_tag 'application' %>
 </body>
 </html>

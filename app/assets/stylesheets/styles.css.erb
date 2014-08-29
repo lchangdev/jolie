@@ -13,13 +13,6 @@ table td {
   letter-spacing: 2px;
 }
 
-/* ---------- links ---------- */
-
-.wholesale-link {
-  text-decoration: underline;
-  color: tomato;
-}
-
 /* ---------- sidebar ---------- */
 
 #sidebar-wrapper {
@@ -34,14 +27,14 @@ table td {
 
 #wrapper,
 #page-content-wrapper,
-.container-fluid {
+.container-fluid,
+#homepage-container {
   height: 100%;
 }
 
 #homepage-container {
   margin-left: 0px;
   margin-right: 0px;
-  height: 100%;
 }
 
 .container-fluid {
@@ -72,28 +65,6 @@ table td {
   width: 25px;
   height: 3px;
   background-color: tomato;
-}
-
-#down-text {
-  -ms-transform: rotate(90deg); /* IE 9 */
-  -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
-  transform: rotate(90deg);
-  color: #5C97BF;
-}
-
-#down-link {
-  font-size: 3em;
-  padding: 0px;
-  font-weight: 100;
-  font-family: 'Advent Pro';
-  border-radius: 100%;
-  height: 100px;
-  width: 100px;
-  border: 2px solid #5C97BF;
-}
-
-#down-link:hover {
-  text-decoration: none;
 }
 
 /* ---------- home ---------- */
@@ -130,26 +101,33 @@ table td {
 
 /* ---------- wholesale ---------- */
 
+#wholesale-container,
+#wholesale-header-container,
+#wholesale-company1-container,
+#wholesale-company2-container {
+  height: 100%;
+}
+
+#wholesale-container,
+#wholesale-summary-container,
+#wholesale-header-container {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
 #wholesale-container {
   background: url('<%= asset_path("background.jpg") %>') no-repeat center;
   background-size: cover;
-  height: 100%;
   background-attachment: fixed;
-  padding-left: 0px;
-  padding-right: 0px;
 }
 
 #wholesale-summary-container {
   background-color: rgba(0,0,0, 0.95);
   opacity: 0.8;
   height: 50%;
-  padding-left: 0px;
-  padding-right: 0px;
 }
 
 #wholesale-header-container {
-  padding-left: 0px;
-  padding-right: 0px;
   padding-top: 140px;
   text-align: center;
 }
@@ -163,12 +141,6 @@ table td {
   color: #5C97BF;
 }
 
-#wholesale-header-container,
-#wholesale-company1-container,
-#wholesale-company2-container {
-  height: 100%;
-}
-
 #wholesale-company1-container,
 #wholesale-company2-container {
   text-align: center;
@@ -180,39 +152,42 @@ table td {
   width: 50%;
   border: 1px solid tomato;
   background-color: transparent;
-  color: tomato;
   opacity: 0.5;
   font-size: 20px;
   letter-spacing: 2px;
 }
 
+.wholesale-btn,
 .wholesale-btn:hover {
   color: tomato;
 }
 
 /* ---------- about ---------- */
 
+#about-container,
+#about-header-container,
+#about-content-container {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
 #about-container {
   background: url('<%= asset_path("background.jpg") %>') no-repeat center;
   background-size: cover;
   height: 100%;
   background-attachment: fixed;
-  padding-left: 0px;
-  padding-right: 0px;
 }
 
 #about-summary-container {
-  height: 50%;
   background-color: rgba(0,0,0, 0.95);
   opacity: 0.8;
   overflow: auto;
 }
 
+#about-summary-container,
 #about-header-container,
 #about-content-container {
   height: 50%;
-  padding-left: 0px;
-  padding-right: 0px;
 }
 
 #about-header-container {
@@ -233,16 +208,14 @@ table td {
 
 /* ---------- contact ---------- */
 
-#contact-container {
+#contact-container,
+#contact-info-container {
   height: 100%;
   padding-left: 0px;
   padding-right: 0px;
 }
 
 #contact-info-container {
-  height: 100%;
-  padding-left: 0px;
-  padding-right: 0px;
   overflow: auto;
 }
 
